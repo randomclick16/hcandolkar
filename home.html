@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>H Candolkar and Sons - Construction Company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #fafafa;
+            color: #333;
+        }
+        header {
+            background: #0d47a1;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+            height: 400px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        section {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            color: #0d47a1;
+        }
+        .services, .projects {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service, .project {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            background: white;
+            flex: 1 1 30%;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        .contact-form {
+            max-width: 400px;
+            margin: auto;
+        }
+        .contact-form label {
+            display: block;
+            margin-top: 1rem;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+        .contact-form button {
+            background: #0d47a1;
+            color: white;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            margin-top: 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .contact-form button:hover {
+            background: #064b85;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>H Candolkar and Sons</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="hero">
+        Building Your Dreams Into Reality
+    </div>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Residential Construction</h3>
+                <p>We build custom homes designed to your exact needs, with quality and precision.</p>
+            </div>
+            <div class="service">
+                <h3>Commercial Projects</h3>
+                <p>From offices to retail spaces, we deliver efficient and durable commercial buildings.</p>
+            </div>
+            <div class="service">
+                <h3>Renovations & Remodeling</h3>
+                <p>Transform your existing spaces into modern, functional environments.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Green Towers Apartment</h3>
+                <p>Multi-story residential building emphasizing sustainability and green technology.</p>
+            </div>
+            <div class="project">
+                <h3>Lakeview Shopping Center</h3>
+                <p>Spacious commercial complex with modern design and ample parking.</p>
+            </div>
+            <div class="project">
+                <h3>Heritage House Renovation</h3>
+                <p>Careful restoration of a historic building preserving original charm.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>H Candolkar and Sons has been a trusted name in the construction industry for over 30 years. We pride ourselves on delivering high-quality construction services with integrity, innovation, and customer satisfaction.</p>
+        <p>Our experienced team works closely with clients to turn visions into reality on time and within budget.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form action="mailto:hcandolkar@example.com" method="post" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 H Candolkar and Sons. All rights reserved.</p>
+    </footer>
+</body>
+</html>
